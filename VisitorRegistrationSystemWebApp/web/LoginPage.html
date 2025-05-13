@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f8d7da;
+                color: #721c24;
+                padding: 40px;
+                text-align: center;
+            }
+            h1 {
+                color: #a94442;
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+            table {
+                margin: 0 auto;
+                font-size: 18px;
+            }
+            td {
+                padding: 8px;
+            }
+            input[type="text"] {
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                width: 200px;
+            }
+            input[type="submit"] {
+                padding: 8px 16px;
+                border: 1px solid #721c24;
+                background-color: #f5c6cb;
+                color: #721c24;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #f1a8b0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Login Page</h1>
+        <form action="j_security_check" method="POST">
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="j_username"> </td>
+                </tr>     
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="text" name="j_password"> </td>
+                </tr>    
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Login"></td>
+                </tr>     
+            </table>   
+        </form>  
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
